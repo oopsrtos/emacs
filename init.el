@@ -1,4 +1,3 @@
-;; http://tuhdo.github.io/c-ide.html
 (require 'package)
 (add-to-list 'package-archives
          '("melpa" . "http://melpa.org/packages/") t)
@@ -80,59 +79,3 @@
   (lambda ()
     (highlight-parentheses-mode t)))
 (global-highlight-parentheses-mode t)
-
-;; (defun my-comment-or-uncomment-region (beg end &optional arg)
-;;   (interactive (if (use-region-p)
-;;                    (list (region-beginning) (region-end) nil)
-;;                  (list (line-beginning-position)
-;;                        (line-beginning-position 2))))
-;;   (comment-or-uncomment-region beg end arg)
-;; )
-
-;; (global-set-key [remap comment-or-uncomment-region] 'my-comment-or-uncomment-region)
-;; (put 'scroll-left 'disabled nil)
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(package-selected-packages
-;;    (quote
-;;     (markdown-mode
-;;      markdown-preview-mode
-;;      zygospore
-;;      yasnippet
-;;      ws-butler
-;;      volatile-highlights
-;;      use-package
-;;      undo-tree
-;;      solarized-theme
-;;      smartparens
-;;      iedit
-;;      highlight-symbol
-;;      highlight-parentheses
-;;      helm-swoop
-;;      helm-projectile
-;;      helm-gtags
-;;      ggtags
-;;      fill-column-indicator
-;;      duplicate-thing
-;;      dtrt-indent
-;;      company
-;;      comment-dwim-2
-;;      color-theme-solarized
-;;      clean-aindent-mode
-;;      autopair
-;;      auto-complete
-;;      atom-one-dark-theme
-;;      anzu))))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
- ;; )
-
-;; bak instruction
-;; (require 'color-rg);;for search tools
-;; (define-key isearch-mode-map (kbd "M-s M-s") 'isearch-toggle-color-rg)
