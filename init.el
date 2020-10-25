@@ -79,3 +79,7 @@
   (lambda ()
     (highlight-parentheses-mode t)))
 (global-highlight-parentheses-mode t)
+
+;; emacs单行滚动
+(setq scroll-step            1
+      scroll-conservatively  10000)
